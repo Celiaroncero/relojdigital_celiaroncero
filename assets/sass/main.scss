@@ -1,0 +1,91 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+
+
+/*{
+ border: 3px solid tomato;
+}*/
+
+.container {
+ display: grid;
+  width: 100%;
+  height: 827px;
+  background-color: white;
+  align-items: center;
+  justify-content: center;
+
+
+  
+  .datos{
+    margin-bottom: 5em;
+
+    #hora{
+      color: rgb(196, 196, 196);
+      font-size: 4em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 9px;;
+    }
+    #fecha{
+      color: rgb(196, 196, 196);
+      font-size: 1em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 5px;
+    }
+
+  }
+ 
+}
+
+.clock {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin-top: 5em;
+  background-color: white;
+  box-shadow: 0 4px 15px rgba(rgb(153, 153, 153), .3);
+  border-radius: 50%;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  background:  rgb(196, 196, 196);
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: 100%;
+          transform-origin: 100%;
+  -webkit-transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+  transition: all 0.05s cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+
+
+.manecillaSeg {
+  height: 2px;
+  border-radius: 1px;
+  background: #ff7708;
+  
+  
+}
+
+.manecillaMin {
+  height: 4px;
+  border-radius: 4px;
+}
+
+.manecillaHor {
+  height: 7px;
+  border-radius: 4px;
+  width: 35%;
+  left: 15%;
+}
